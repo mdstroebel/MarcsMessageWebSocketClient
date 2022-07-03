@@ -28,6 +28,7 @@ public class MessageWebSocketClientStarScream: NSObject {
             let webSocket = WebSocket(request: request)
             webSocket.delegate = self
             self.webSocket = webSocket
+            self.webSocket?.connect()
         } else {
             webSocket = nil
         }
