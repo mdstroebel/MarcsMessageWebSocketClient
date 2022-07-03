@@ -48,7 +48,7 @@ extension MessageWebSocketClientUrlSession: URLSessionWebSocketDelegate {
 
 @available(iOS 13.0, *)
 extension MessageWebSocketClientUrlSession: MessageWebSocketClientProtocol {
-    func subscribeToMessages(with completion: @escaping (String) -> Void) {
+    public func subscribeToMessages(with completion: @escaping (String) -> Void) {
         webSocket?.receive(completionHandler: { result in
             switch result {
             case .failure:

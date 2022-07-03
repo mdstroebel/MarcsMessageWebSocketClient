@@ -41,7 +41,7 @@ extension MessageWebSocketClientStarScream: WebSocketDelegate {
 }
 
 extension MessageWebSocketClientStarScream: MessageWebSocketClientProtocol {
-    func subscribeToMessages(with completion: @escaping (String) -> Void) {
+    public func subscribeToMessages(with completion: @escaping (String) -> Void) {
         webSocket?.onEvent = { event in
             switch event {
             case .text(let message):
