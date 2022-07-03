@@ -7,6 +7,6 @@
 
 import Foundation
 
-protocol MessageWebSocketClientProtocol {
+public protocol MessageWebSocketClientProtocol {
     func subscribeToMessages(with completion: @escaping (String) -> Void)
 }
