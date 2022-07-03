@@ -1,3 +1,3 @@
 # MarcsMessageWebSocketClient
 
-A description of this package.
+A basic WebSocket client for a messaging app code challenge
